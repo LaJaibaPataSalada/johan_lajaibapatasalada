@@ -1,0 +1,251 @@
+body{
+	/* background-image es para imagen de fondo*/
+	background-image:url("../imagenes/fondo2.png");
+	/*font-family es para la tipografia de letra */
+	font-family:"Tahoma","Lucida Console","Courier New";
+	/*color es para el color de las letras */
+	color:#1C2833;
+	/*font-size es para el tamaño de las letras indicando en pixeles*/
+	font-size:40px;
+	text-align:center;
+}
+hr{
+	/*border es para la linea
+	el grosor se indica en pixeles,inficamos el tipo de linea y el codigo del color*/
+	border:3px solid #BA4A00;
+	/*width es para el anchi de la linea*/
+	width:80%;
+	/*border-radius es para agregar una curva al final*/
+	border-radius:5px;
+}
+p{
+	text-align:justify;
+	font-size:30px;
+	color:#000000;
+	/*letras negritas*/
+	font-weight:bold;
+	/*interlineado*/
+	line-height:1.5;
+	/**/
+	background-color
+	/*espacio entre cada letra*/
+	letter-spacing:2px;
+}
+table,tr,td{
+	/*atributos para las celdas de la tabla*/
+	border:1px solid #A9CCE3;
+	border-spacing:0px;
+	background-color:#FFFFFF;
+    /*atributos para el texto o la tabla*/
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;	
+}
+/*clase para los pie de paginas*/
+.pie{
+	font-family:fuente-almost;
+	text-align:center;
+	font-size:10px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+.encabezado{
+	font-family:fuente-KG;
+	text-align:center;
+	font-size:40px;
+	font-weight:bold;
+	color:#000000;
+}
+/*divs*/
+div#top{
+	font-family:fuente-mouldy;
+	width:100%;
+	height:75px;
+	/*background-image:linear-gradient(#86C8F3,#ECF8FF);*/
+	background-image:radial-gradient(#86C8F3,#ECF8FF);
+	/*background-image:conic-gradient(#86C8F3,#ECF8FF);*/
+}
+div#ppag{
+	width:100%;
+	height:100px;
+	background-image:linear-gradient(#86C8F3,#ECF8FF);
+}
+/*carrousel de imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;	
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;	
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller> a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows> a > i{
+	color:white;
+	
+}
+/*Cajaspara productos*/
+.caja{
+	height:300px;
+	width:250;
+	background:#D8F7FF;
+	border:1px solid #D8F7FF;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow:0 0 10px cyan;
+	transform:scale(1.3);
+	
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.text-adicional{
+	font-family:fuente-KG;
+	padding-top:5px;
+	font-size:15px;
+}
+.Texto1{
+	text-align:center;
+	font-size:8px;
+    font-weight:bold;
+	color:#41ff5e;
+	background-color:#5a73e0;
+}
+.caja2{
+	height:150px;
+	width:500;
+	background:#D8F7FF;
+	border:5px solid #D8F7FF;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+/*menu de navgacion*/
+.navegacion{
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#fff;
+	font-weight:bold;
+	font-size:15px;
+	display:flex;
+	transition:flex-grow 0.2s;
+	justify-content:center;
+	align-item:center;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+
+}
+.navegacion-item:nth-child(1){
+	background:#85c1E9;
+}
+.navegacion-item:nth-child(2){
+	background:#76D7C4;
+}
+.navegacion-item:nth-child(3){
+	background:#F9E79F;
+}
+.navegacion-item:nth-child(4){
+	background:#D7DBE2;
+}
+.contacto{
+	position:absolute;
+	left:0;
+    height:300px;
+	width:1410px;
+	background:#D8F7FF;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+	
+	}
+	.text-adicional {
+		padding-top:5px;
+		font-size:15px;
+		
+	}
+	.contacto-image{
+		position:absolute;
+	left:0;
+    height:300px;
+	width:250;
+	background:#D8F7FF;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+	
+	}
+@font-face{
+	font-family:fuente-mouldy;
+	src: url(../fuentes/Mouldy Cheese.tff);
+}
+@font-face{
+	font-family:fuente-almost;
+	src: url(../fuentes/AlmostTextual.tff);
+}
+@font-face{
+	font-family:fuente-KG;
+	src: url(../fuentes/Soft Core.tff);
+}
